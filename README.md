@@ -11,8 +11,7 @@ This web application allows customers to view the upcoming locations of their fa
 ## Original Live Website
 [Street Food App- Darkside of the Q](https://streetfoodapp.com/eugene/darkside-of-the-q)
 
-Inline-style:
-![screenshot of live site]("https://github.com/amcgladd/angular-food-truck/blob/master/images/Screen%20Shot%202018-10-19%20at%208.37.32%20AM.png")
+![screenshot of live site](https://github.com/amcgladd/angular-food-truck/blob/master/images/Screen%20Shot%202018-10-19%20at%208.37.32%20AM.png)
 
 ##User Stories
 
