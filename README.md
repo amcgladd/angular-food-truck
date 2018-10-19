@@ -37,6 +37,8 @@ As an admin, I want to see a list of private event requests.
 
 As an admin, I want to approve a private event request and add event to admin-only list.
 
+As an admit, I want to sort event list by All, public events, or private events.
+
 As a unknown user, I want to be able to specify my role either patron or admin.
 
 ## Planned Component map
