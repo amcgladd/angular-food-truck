@@ -27,7 +27,7 @@ As a patron and/or admin, I want past events to automatically hide from the list
 
 As a patron and/or admin, I want any event listed for the current date to have a blue left margin.
 
-As a patron, I want to be able to sort events by proximity to a specified location.
+As a patron and/or admin, I want to see today's event marked green if the truck is currently open. Also, the hours should read "Open now until {{currentEvent.closingHour}}"
 
 As a patron, I want to be able to report a event error by clicking a button that will email the site admin.
 

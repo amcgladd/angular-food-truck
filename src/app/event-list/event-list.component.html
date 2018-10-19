@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let currentEvent of childEventList">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}
+    <ul>
+      <li>{{currentEvent.address}}</li>
+      <li>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</li>
+    </ul>
+  </li>
+</ul>

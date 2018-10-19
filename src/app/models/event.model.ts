@@ -1,12 +1,12 @@
 export class Event {
-  eventDate: Date;
-  constructor(public eventDateStr: string,
+  constructor(
+    public day: number,
+    public month: number,
+    public year: number,
     public address: string,
     public openHour: number,
     public closeHour: number,
     public latitude: number,
     public longitude: number,
-  )   {
-    this.eventDate =new Date(eventDateStr);
-  }
+  ) { }
 }
