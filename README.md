@@ -21,17 +21,21 @@ As an admin, I want to fill out a form when I create a new event to add it to th
 
 As an admin, I want the option to edit an event's properties after entering them just in case I make a mistake.
 
+As an admin, I want the option to delete an entire event.
+
 As a patron and/or admin, I want past events to automatically hide from the list.
 
 As a patron and/or admin, I want any event listed for the current date to have a blue left margin.
 
 As a patron, I want to be able to sort events by proximity to a specified location.
 
-As a patron, I want to be able to report a schedule error by clicking a button that will email the site admin.
+As a patron, I want to be able to report a event error by clicking a button that will email the site admin.
 
 As a patron, I want to be able to book a catering event by specifying: event type, event details, food preferences, contact information.
 
 As an admin, I want to see a list of catering event requests.
+
+As a unknown user, I want to be able to specify my role either patron or admin.
 
 ## Setup
 
