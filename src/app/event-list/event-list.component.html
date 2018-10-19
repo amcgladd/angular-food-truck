@@ -3,6 +3,7 @@
     <ul>
       <li>{{currentEvent.address}}</li>
       <li>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</li>
+      <app-event-map></app-event-map>
     </ul>
     <button (click)="editButtonClicked(currentEvent)">Edit</button>
     <button (click)="deleteButtonClicked(currentEvent)">Delete</button>

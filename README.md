@@ -15,15 +15,15 @@ This web application allows customers to view the upcoming locations of their fa
 
 ##User Stories
 
-√ As a patron, I want to see a list of all upcoming scheduled locations. For each event, I need to see its date, street address, operation hours, and a map with a icon showing the location.
+√ As a patron, I want to see a list of all upcoming scheduled locations. For each event, I need to see its date, street address, operation hours, and a map with a icon showing the location. (note: map location not yet ready)
 
 √ As an admin, I want to fill out a form when I create a new event to add it to the list.
 
 √ As an admin, I want the option to edit an event's properties after entering them just in case I make a mistake.
 
-As an admin, I want the option to delete an entire event.
+√ As an admin, I want the option to delete an entire event.
 
-As a patron and/or admin, I want to events to be sorted chronologically.
+(incomplete: not sure how to orderBy in Angular) As a patron and/or admin, I want to events to be sorted chronologically.
 
 As a patron and/or admin, I want past events to automatically hide from the list.
 
@@ -39,7 +39,7 @@ As an admin, I want to see a list of private event requests.
 
 As an admin, I want to approve a private event request and add event to admin-only list.
 
-As an admit, I want to sort event list by All, public events, or private events.
+As an admit, I want to filter event list by All, public events, or private events.
 
 As a unknown user, I want to be able to specify my role either patron or admin.
 

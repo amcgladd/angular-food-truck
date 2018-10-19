@@ -19,5 +19,5 @@ export class EventListComponent {
     this.clickDeleteEvent.emit(eventToBeDeleted);
   }
 
-  
+
 }
