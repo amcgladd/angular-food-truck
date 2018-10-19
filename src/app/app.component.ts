@@ -15,15 +15,20 @@ export class AppComponent {
   ]
 
   addEvent(newEvent: Event) {
-      this.masterEventList.push(newEvent);
-    }
+    this.masterEventList.push(newEvent);
+  }
 
-    editEvent(clickedEvent) {
+  editEvent(clickedEvent) {
     this.selectedEvent = clickedEvent
     console.log(this.selectedEvent);
   }
 
   editingDone() {
     this.selectedEvent = null;
+  }
+
+  deleteEvent(deadEvent: Event) {
+    const indexOfDeadEvent = this.masterEventList.indexOf(deadEvent);
+    this.masterEventList.splice(indexOfDeadEvent, 1);
   }
 }

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { NewEventComponent } from './new-event/new-event.component';
 import { EditEventComponent } from './edit-event/edit-event.component';
+import { DeleteEventComponent } from './delete-event/delete-event.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EditEventComponent } from './edit-event/edit-event.component';
     AppComponent,
     EventListComponent,
     NewEventComponent,
-    EditEventComponent
+    EditEventComponent,
+    DeleteEventComponent
   ],
   imports: [
     BrowserModule,
