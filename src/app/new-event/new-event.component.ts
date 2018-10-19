@@ -9,14 +9,16 @@ import { Event } from '../models/event.model'
 export class NewEventComponent {
   @Output() sendEvent = new EventEmitter();
 
-
-
+  submitNewEvent(
+  day: number,
+  month: number,
+  year: number,
+  address: string,
+  openHour: number,
+  closeHour: number,
+  latitude: number,
+  longitude: number,) {
+    let newEvent: Event = new Event(day,month,year,address,openHour,closeHour,latitude,longitude);
+    this.sendEvent.emit(newEvent);
+  }
 }
-
-
-// @Output() sendKeg = new EventEmitter();
-//
-//   submitForm(name: string, type: string, price: number, abv: number) {
-//     let newKeg: Keg = new Keg(name, type, price, abv);
-//     this.sendKeg.emit(newKeg);
-//   }
