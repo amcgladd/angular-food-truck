@@ -39,7 +39,7 @@ As a unknown user, I want to be able to specify my role either patron or admin.
 
 ## Planned Component map
 
-![component map]()
+![component map](https://github.com/amcgladd/angular-food-truck/blob/master/images/componentMap.png)
 
 ## Setup
 
