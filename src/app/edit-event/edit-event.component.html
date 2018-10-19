@@ -1,3 +1,22 @@
-<p>
-  edit-event works!
-</p>
+<div *ngIf="childSelectedEvent">
+  <h1>Edit An Event</h1>
+  <div>
+      <label>Date</label>
+      <p><input [(ngModel)]="childSelectedEvent.month">/<input [(ngModel)]="childSelectedEvent.day">/<input [(ngModel)]="childSelectedEvent.year"></p>
+  </div>
+  <div>
+    <label>Address</label>
+    <p><input [(ngModel)]="childSelectedEvent.address"></p>
+  </div>
+  <div>
+    <label>Hours</label>
+    <p>From <input [(ngModel)]="childSelectedEvent.openHour"> To <input [(ngModel)]="childSelectedEvent.closeHour"></p>
+  </div>
+  <div>
+    <label>Map Coordinates</label>
+    <p>Lat: <input [(ngModel)]="childSelectedEvent.latitude"> Long: <input [(ngModel)]="childSelectedEvent.longitude"></p>
+  </div>
+  <div>
+    <button (click)="editEventComplete()">Done</button>
+  </div>
+</div>

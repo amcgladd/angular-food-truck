@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Event } from '../models/event.model'
+import { Event } from '../models/event.model';
 
 @Component({
   selector: 'app-event-list',
@@ -8,4 +8,9 @@ import { Event } from '../models/event.model'
 })
 export class EventListComponent {
 @Input() childEventList: Event[];
+@Output() clickEventToBeEdited = new EventEmitter();
+
+editButtonClicked(eventToEdit: Event) {
+  this.clickEventToBeEdited.emit(eventToEdit);
+  }
 }
