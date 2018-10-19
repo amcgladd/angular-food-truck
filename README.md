@@ -15,7 +15,7 @@ This web application allows customers to view the upcoming locations of their fa
 
 ##User Stories
 
-As a patron, I want to see a list of all upcoming scheduled locations. For each event, I need to see its date, street address, operation hours, and a map with a icon showing the location.
+√ As a patron, I want to see a list of all upcoming scheduled locations. For each event, I need to see its date, street address, operation hours, and a map with a icon showing the location.
 
 As an admin, I want to fill out a form when I create a new event to add it to the list.
 

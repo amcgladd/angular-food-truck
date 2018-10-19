@@ -8,5 +8,4 @@ import { Event } from '../models/event.model'
 })
 export class EventListComponent {
 @Input() childEventList: Event[];
-
 }
