@@ -13,7 +13,9 @@ This web application allows customers to view the upcoming locations of their fa
 
 ![screenshot of live site](https://github.com/amcgladd/angular-food-truck/blob/master/images/Screen%20Shot%202018-10-19%20at%208.37.32%20AM.png)
 
-##User Stories
+## User Stories
+
+√ = completed
 
 √ As a patron, I want to see a list of all upcoming scheduled locations. For each event, I need to see its date, street address, operation hours, and a map with a icon showing the location. (note: map location not yet ready)
 
@@ -45,7 +47,7 @@ As a unknown user, I want to be able to specify my role either patron or admin.
 
 ## Planned Component map
 
-![component map](https://github.com/amcgladd/angular-food-truck/blob/master/images/componentMap.png)
+![component map](https://github.com/amcgladd/angular-food-truck/blob/master/images/componentMap2.png)
 
 ## Setup
 
