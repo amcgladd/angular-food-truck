@@ -8,5 +8,9 @@ import { Event } from '../models/event.model';
 })
 export class EditEventComponent {
   @Input() childSelectedEvent: Event;
-  
+  @Output() clickDone = new EventEmitter();
+
+  editingDone () {
+    this.clickDone.emit();
+  }
 }

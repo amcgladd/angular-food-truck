@@ -23,4 +23,7 @@ export class AppComponent {
     console.log(this.selectedEvent);
   }
 
+  editingDone() {
+    this.selectedEvent = null;
+  }
 }
