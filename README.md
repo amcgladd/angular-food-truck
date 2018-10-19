@@ -31,9 +31,11 @@ As a patron and/or admin, I want to see today's event marked green if the truck 
 
 As a patron, I want to be able to report a event error by clicking a button that will email the site admin.
 
-As a patron, I want to be able to book a catering event by specifying: event type, event details, food preferences, contact information.
+As a patron, I want to be able to book a private event by specifying: event type, event details, food preferences, contact information.
 
-As an admin, I want to see a list of catering event requests.
+As an admin, I want to see a list of private event requests.
+
+As an admin, I want to approve a private event request and add event to admin-only list.
 
 As a unknown user, I want to be able to specify my role either patron or admin.
 
