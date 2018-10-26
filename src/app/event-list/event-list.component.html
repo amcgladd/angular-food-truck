@@ -1,12 +1,14 @@
 
-<div class="container">
+<div class="container event-container">
 
 
   <div class="row">
     <div class="col-sm-8">
 
       <h1>Event-List</h1>
+
       <div *ngFor="let currentEvent of events | async" class="card">
+        <span class="border-left border-info">
         <div class="card-header">
           <a><h1 (click)="goToDetailPage(currentEvent)">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1></a>
         </div>
@@ -19,11 +21,16 @@
             <app-edit-event [selectedEvent]="currentEvent"></app-edit-event>
           </div>
         </div>
+      </span>
       </div>
 
     </div>
     <div class="col-sm-4">
-        <button class="btn btn-outline-danger"><a routerLink="catering">Book Catering</a></button>
+      <a routerLink="catering">
+        <button class="btn btn-outline-danger">
+          Book Catering
+        </button>
+      </a>
     </div>
 
   </div>
