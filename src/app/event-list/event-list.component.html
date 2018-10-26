@@ -6,6 +6,7 @@
     <h3>{{currentEvent.address}}</h3>
     <h3>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
     <div *ngIf="currentRoute === '/admin'">
+      <app-event-map></app-event-map>
           <hr>
           <button (click)="editButtonClicked(currentEvent)">Edit</button>
           <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
