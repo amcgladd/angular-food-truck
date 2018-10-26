@@ -27,6 +27,10 @@ This web application allows customers to view the upcoming locations of their fa
 
 (incomplete: not sure how to orderBy in Angular) As a patron and/or admin, I want to events to be sorted chronologically.
 
+√ As any user, I want to be able to see a events-detail page showing more details about a single event.
+
+## Stretch User Stories
+
 As a patron and/or admin, I want past events to automatically hide from the list.
 
 As a patron and/or admin, I want any event listed for the current date to have a blue left margin.
@@ -45,8 +49,6 @@ As an admit, I want to filter event list by All, public events, or private event
 
 As a unknown user, I want to be able to specify my role either patron or admin.
 
-## Stretch User Stories
-As any user, I want to be able to see a events-detail page showing more details about a single event. 
 
 
 ## Planned Component map

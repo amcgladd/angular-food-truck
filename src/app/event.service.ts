@@ -28,4 +28,9 @@ export class EventService {
     const eventEntryInFirebase = this.getEventById(localUpdatedEvent.$key);
     eventEntryInFirebase.update({day: localUpdatedEvent.day, month: localUpdatedEvent.month, year: localUpdatedEvent.year});
   }
+
+  deleteEvent(localEventToDelete){
+    var eventEntryInFirebase = this.getEventById(localEventToDelete.$key);
+    eventEntryInFirebase.remove();
+  }
 }

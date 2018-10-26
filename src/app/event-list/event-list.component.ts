@@ -12,9 +12,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [EventService]
 })
 export class EventListComponent implements OnInit {
-  @Output() clickEventToBeEdited = new EventEmitter();
-  @Output() clickDeleteEvent = new EventEmitter();
-
   events: FirebaseListObservable<any[]>;
   selectedEvent = null;
   currentRoute: string = this.router.url;
@@ -26,17 +23,14 @@ export class EventListComponent implements OnInit {
     }
 
   editEvent(clickedEvent) {
-    this.selectedEvent = clickedEvent
+    this.selectedEvent = clickedEvent;
   }
-
 
   addEvent(newEvent: Event) {
     this.events.push(newEvent);
   }
 
-  goToDetailPage(clickedEvent: Event) {
+  goToDetailPage(clickedEvent) {
     this.router.navigate(['events', clickedEvent.$key]);
-   }
-
-
+  }
 }

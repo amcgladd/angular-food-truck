@@ -1,8 +1,8 @@
 <div>
   <h1>Edit Event</h1>
   <div>
-      <label>Date</label>
-      <p><input [(ngModel)]="selectedEvent.month">/<input [(ngModel)]="selectedEvent.day">/<input [(ngModel)]="selectedEvent.year"></p>
+    <label>Date</label>
+    <p><input [(ngModel)]="selectedEvent.month">/<input [(ngModel)]="selectedEvent.day">/<input [(ngModel)]="selectedEvent.year"></p>
   </div>
   <div>
     <label>Address</label>
@@ -18,5 +18,7 @@
   </div>
   <div>
     <button (click)="beginUpdatingEvent(selectedEvent)">Update</button>
+    <hr>
+    <button (click)="beginDeletingEvent(selectedEvent)">Delete</button>
   </div>
 </div>
