@@ -21,7 +21,7 @@ export class EventListComponent implements OnInit {
 
   ngOnInit(){
       this.events = this.eventService.getEvents();
-      console.log(this.childEventList);
+      console.log(this.events);
     }
 
   editEvent(clickedEvent) {
@@ -34,12 +34,12 @@ export class EventListComponent implements OnInit {
   }
 
   addEvent(newEvent: Event) {
-    this.childEventList.push(newEvent);
+    this.events.push(newEvent);
   }
 
   deleteEvent(deadEvent: Event) {
-    const indexOfDeadEvent = this.childEventList.indexOf(deadEvent);
-    this.childEventList.splice(indexOfDeadEvent, 1);
+    const indexOfDeadEvent = this.events.indexOf(deadEvent);
+    this.events.splice(indexOfDeadEvent, 1);
   }
 
   editButtonClicked(eventToEdit: Event) {
