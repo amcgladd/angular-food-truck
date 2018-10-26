@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Event } from '../models/event.model';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-event-list',
   templateUrl: './event-list.component.html',
@@ -24,6 +25,5 @@ export class EventListComponent {
 
   goToDetailPage(clickedEvent: Event) {
      this.router.navigate(['events', clickedEvent.id]);
-   };
-
+   }
 }

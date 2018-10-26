@@ -1,4 +1,4 @@
-<div *ngFor="let currentEvent of childEventList" (click)="goToDetailPage(event)" class="panel panel-default">
+<div *ngFor="let currentEvent of childEventList" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
   <div class="panel-body">
     <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
     <h3>{{currentEvent.address}}</h3>
