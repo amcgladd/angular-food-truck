@@ -1,1 +1,8 @@
-<h2>This album has id number: {{eventId}}</h2>
+<div class="panel panel-default">
+  <div class="panel-body">
+<h3>{{eventToDisplay.month}}/{{eventToDisplay.day}}/{{eventToDisplay.year}}</h3>
+<h3>{{eventToDisplay.address}}</h3>
+<h3>Hours:{{eventToDisplay.openHour}}-{{eventToDisplay.closeHour}}</h3>
+  <app-event-map></app-event-map>
+</div>
+</div>

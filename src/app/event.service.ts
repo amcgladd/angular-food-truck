@@ -11,10 +11,10 @@ export class EventService {
   return EVENTS;
 }
 
-getAlbumById(albumId: number){
-    for (var i = 0; i <= ALBUMS.length - 1; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
+getEventById(eventId: number){
+    for (var i = 0; i <= EVENTS.length - 1; i++) {
+      if (EVENTS[i].id === eventId) {
+        return EVENTS[i];
       }
     }
   }
