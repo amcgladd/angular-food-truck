@@ -7,7 +7,7 @@ import { Event } from '../models/event.model';
   styleUrls: ['./edit-event.component.css']
 })
 export class EditEventComponent {
-  @Input() childSelectedEvent: Event;
+  @Input() selectedEvent;
   @Output() clickDone = new EventEmitter();
 
 

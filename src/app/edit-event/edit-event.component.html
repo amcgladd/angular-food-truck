@@ -1,20 +1,20 @@
-<div *ngIf="childSelectedEvent">
-  <h1>Edit An Event</h1>
+<div>
+  <h1>Edit Event</h1>
   <div>
       <label>Date</label>
-      <p><input [(ngModel)]="childSelectedEvent.month">/<input [(ngModel)]="childSelectedEvent.day">/<input [(ngModel)]="childSelectedEvent.year"></p>
+      <p><input [(ngModel)]="selectedEvent.month">/<input [(ngModel)]="selectedEvent.day">/<input [(ngModel)]="selectedEvent.year"></p>
   </div>
   <div>
     <label>Address</label>
-    <p><input [(ngModel)]="childSelectedEvent.address"></p>
+    <p><input [(ngModel)]="selectedEvent.address"></p>
   </div>
   <div>
     <label>Hours</label>
-    <p>From <input [(ngModel)]="childSelectedEvent.openHour"> To <input [(ngModel)]="childSelectedEvent.closeHour"></p>
+    <p>From <input [(ngModel)]="selectedEvent.openHour"> To <input [(ngModel)]="selectedEvent.closeHour"></p>
   </div>
   <div>
     <label>Map Coordinates</label>
-    <p>Lat: <input [(ngModel)]="childSelectedEvent.latitude"> Long: <input [(ngModel)]="childSelectedEvent.longitude"></p>
+    <p>Lat: <input [(ngModel)]="selectedEvent.latitude"> Long: <input [(ngModel)]="selectedEvent.longitude"></p>
   </div>
   <div>
     <button (click)="editingDone()">Done</button>

@@ -1,16 +1,18 @@
 <h1>Event-List</h1>
 
-<div *ngFor="let currentEvent of events | async" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
+<div *ngFor="let currentEvent of events | async"  class="panel panel-default">
   <div class="panel-body">
-    <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
+    <h1 (click)="goToDetailPage(currentEvent)">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
     <h3>{{currentEvent.address}}</h3>
     <h3>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <app-event-map></app-event-map>
-          <hr>
-          <button (click)="editButtonClicked(currentEvent)">Edit</button>
-          <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
-          <app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event>
-        </div>
+      <hr>
+      <!-- <button (click)="editButtonClicked(currentEvent)">Edit</button> -->
+      <!-- <button (click)="deleteButtonClicked(currentEvent)">Delete</button> -->
+      <app-edit-event [selectedEvent]="event"></app-edit-event>
+    </div>
   </div>
 </div>
+
+  <!-- <app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event> -->
