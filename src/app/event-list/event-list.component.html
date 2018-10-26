@@ -1,18 +1,30 @@
 
 <div class="container">
-  <h1>Event-List</h1>
-  <div *ngFor="let currentEvent of events | async" class="card">
-    <div class="card-header">
-    <a><h1 (click)="goToDetailPage(currentEvent)">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1></a>
-    </div>
-    <div class="card-body">
-      <h3 class="card-text">{{currentEvent.address}}</h3>
-      <h3 class="card-text">Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
-      <div *ngIf="currentRoute === '/admin'">
-        <app-event-map></app-event-map>
-        <hr>
-        <app-edit-event [selectedEvent]="currentEvent"></app-edit-event>
+
+
+  <div class="row">
+    <div class="col-sm-8">
+
+      <h1>Event-List</h1>
+      <div *ngFor="let currentEvent of events | async" class="card">
+        <div class="card-header">
+          <a><h1 (click)="goToDetailPage(currentEvent)">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1></a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-text">{{currentEvent.address}}</h3>
+          <h3 class="card-text">Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
+          <div *ngIf="currentRoute === '/admin'">
+            <app-event-map></app-event-map>
+            <hr>
+            <app-edit-event [selectedEvent]="currentEvent"></app-edit-event>
+          </div>
+        </div>
       </div>
+
     </div>
+    <div class="col-sm-4">
+        <button class="btn btn-outline-danger"><a routerLink="catering">Book Catering</a></button>
+    </div>
+
   </div>
 </div>

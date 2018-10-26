@@ -1,3 +1,13 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+  background-color: lightgrey;
+
+}
+
+
 .footer {
   position: fixed;
   bottom: 0;
