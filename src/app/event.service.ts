@@ -23,4 +23,9 @@ export class EventService {
   getEventById(eventId: number){
     return this.database.object('events/' + eventId);
   }
+
+  updateEvent(localUpdatedEvent){
+    const eventEntryInFirebase = this.getEventById(localUpdatedEvent.$key);
+    eventEntryInFirebase.update({day: localUpdatedEvent.day, month: localUpdatedEvent.month, year: localUpdatedEvent.year});
+  }
 }

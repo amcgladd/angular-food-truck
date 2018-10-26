@@ -29,25 +29,9 @@ export class EventListComponent implements OnInit {
     this.selectedEvent = clickedEvent
   }
 
-  // editingDone() {
-  //   this.selectedEvent = null;
-  // }
 
   addEvent(newEvent: Event) {
     this.events.push(newEvent);
-  }
-
-  // deleteEvent(deadEvent: Event) {
-  //   const indexOfDeadEvent = this.events.indexOf(deadEvent);
-  //   this.events.splice(indexOfDeadEvent, 1);
-  // }
-
-  editButtonClicked(eventToEdit: Event) {
-    this.clickEventToBeEdited.emit(eventToEdit);
-  }
-
-  deleteButtonClicked(eventToBeDeleted) {
-    this.clickDeleteEvent.emit(eventToBeDeleted);
   }
 
   goToDetailPage(clickedEvent: Event) {

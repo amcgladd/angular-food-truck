@@ -1,19 +1,4 @@
-<p>edit works</p>
-<h4>Edit Event</h4>
-
-<label>New Event Day:</label>
-<input [(ngModel)]="selectedEvent.day">
-<br>
-
-<label>New Event Month:</label>
-<input [(ngModel)]="selectedEvent.month">
-<br>
-
-<label>New Event Year:</label>
-<input [(ngModel)]="selectedEvent.year">
-
-
-<!-- <div>
+<div>
   <h1>Edit Event</h1>
   <div>
       <label>Date</label>
@@ -32,6 +17,6 @@
     <p>Lat: <input [(ngModel)]="selectedEvent.latitude"> Long: <input [(ngModel)]="selectedEvent.longitude"></p>
   </div>
   <div>
-    <button (click)="editingDone()">Done</button>
+    <button (click)="beginUpdatingEvent(selectedEvent)">Update</button>
   </div>
-</div> -->
+</div>

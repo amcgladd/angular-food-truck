@@ -1,5 +1,4 @@
 import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
-import { Event } from '../models/event.model';
 import { EventService } from '../event.service';
 
 
@@ -11,12 +10,13 @@ import { EventService } from '../event.service';
 })
 export class EditEventComponent implements OnInit {
   @Input() selectedEvent;
-  @Output() clickDone = new EventEmitter();
+
+  constructor(private eventService: EventService) { }
 
   ngOnInit() {
   }
 
-  editingDone() {
-    this.clickDone.emit();
+  beginUpdatingEvent(eventToUpdate){
+    this.eventService.updateEvent(eventToUpdate);
   }
 }
