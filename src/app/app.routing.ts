@@ -1,5 +1,6 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EventListComponent } from './event-list/event-list.component';
 import { CateringComponent } from './catering/catering.component';
 import { EventDetailComponent }   from './event-detail/event-detail.component';
 
@@ -7,7 +8,11 @@ import { EventDetailComponent }   from './event-detail/event-detail.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'event-list',
+    component: EventListComponent
+  },
+  {
+    path: 'catering',
     component: CateringComponent
   },
   {
