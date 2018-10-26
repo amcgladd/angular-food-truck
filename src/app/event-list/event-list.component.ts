@@ -17,12 +17,12 @@ export class EventListComponent implements OnInit {
 
   events: FirebaseListObservable<any[]>;
   selectedEvent = null;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private eventService: EventService){}
 
   ngOnInit(){
       this.events = this.eventService.getEvents();
-      console.log(this.events);
     }
 
   editEvent(clickedEvent) {
@@ -54,4 +54,6 @@ export class EventListComponent implements OnInit {
   goToDetailPage(clickedEvent: Event) {
     this.router.navigate(['events', clickedEvent.$key]);
    }
+
+
 }

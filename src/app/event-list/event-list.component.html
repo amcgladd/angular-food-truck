@@ -5,10 +5,11 @@
     <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
     <h3>{{currentEvent.address}}</h3>
     <h3>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
-    <button (click)="editButtonClicked(currentEvent)">Edit</button>
-    <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
+    <div *ngIf="currentRoute === '/admin'">
+          <hr>
+          <button (click)="editButtonClicked(currentEvent)">Edit</button>
+          <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
+          <app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event>
+        </div>
   </div>
 </div>
-
-
-<app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event>
