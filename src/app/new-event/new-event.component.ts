@@ -17,8 +17,9 @@ export class NewEventComponent {
   openHour: number,
   closeHour: number,
   latitude: number,
-  longitude: number,) {
-    let newEvent: Event = new Event(day,month,year,address,openHour,closeHour,latitude,longitude);
+  longitude: number,
+  id: number) {
+    let newEvent: Event = new Event(day,month,year,address,openHour,closeHour,latitude,longitude,id);
     this.sendEvent.emit(newEvent);
   }
 }

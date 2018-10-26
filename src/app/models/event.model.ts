@@ -8,5 +8,6 @@ export class Event {
     public closeHour: number,
     public latitude: number,
     public longitude: number,
+    public id: number
   ) { }
 }

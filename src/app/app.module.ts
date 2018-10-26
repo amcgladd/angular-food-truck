@@ -10,6 +10,7 @@ import { NewEventComponent } from './new-event/new-event.component';
 import { EditEventComponent } from './edit-event/edit-event.component';
 import { EventMapComponent } from './event-map/event-map.component';
 import { CateringComponent } from './catering/catering.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 
 
@@ -21,6 +22,7 @@ import { CateringComponent } from './catering/catering.component';
     EditEventComponent,
     EventMapComponent,
     CateringComponent,
+    EventDetailComponent,
   ],
   imports: [
     BrowserModule,
