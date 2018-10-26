@@ -23,8 +23,6 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,8 +44,5 @@ export const firebaseConfig = {
   providers: [],
   bootstrap: [AppComponent]
 })
-
-
-
 
 export class AppModule { }
