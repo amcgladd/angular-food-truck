@@ -52,6 +52,6 @@ export class EventListComponent implements OnInit {
   }
 
   goToDetailPage(clickedEvent: Event) {
-     // this.router.navigate(['events', clickedEvent.id]);
+    this.router.navigate(['events', clickedEvent.$key]);
    }
 }

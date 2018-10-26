@@ -9,23 +9,18 @@ export class EventService {
   events: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-  this.events = database.list('events');
-}
+    this.events = database.list('events');
+  }
 
   getEvents() {
-  return this.events;
-}
+    return this.events;
+  }
 
- addEvent(newEvent: Event) {
-   this.events.push(newEvent);
- }
+  addEvent(newEvent: Event) {
+    this.events.push(newEvent);
+  }
 
-getEventById(eventId: number){
-  //   for (var i = 0; i <= EVENTS.length - 1; i++) {
-  //     if (EVENTS[i].id === eventId) {
-  //       return EVENTS[i];
-  //     }
-  //   }
-  // }
-}
+  getEventById(eventId: number){
+    return this.database.object('events/' + eventId);
+  }
 }
