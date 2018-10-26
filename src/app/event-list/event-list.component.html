@@ -1,11 +1,10 @@
-<ul>
-  <li *ngFor="let currentEvent of childEventList">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}
-    <ul>
-      <li>{{currentEvent.address}}</li>
-      <li>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</li>
-      <app-event-map></app-event-map>
-    </ul>
+<div *ngFor="let currentEvent of childEventList" class="panel panel-default">
+  <div class="panel-body">
+    <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
+    <h3>{{currentEvent.address}}</h3>
+    <h3>Hours:{{currentEvent.openHour}}-{{currentEvent.closeHour}}</h3>
+    <app-event-map></app-event-map>
     <button (click)="editButtonClicked(currentEvent)">Edit</button>
     <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
-  </li>
-</ul>
+  </div>
+</div>

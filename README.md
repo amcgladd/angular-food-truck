@@ -45,6 +45,10 @@ As an admit, I want to filter event list by All, public events, or private event
 
 As a unknown user, I want to be able to specify my role either patron or admin.
 
+## Stretch User Stories
+As any user, I want to be able to see a events-detail page showing more details about a single event. 
+
+
 ## Planned Component map
 
 ![component map](https://github.com/amcgladd/angular-food-truck/blob/master/images/componentMap2.png)
