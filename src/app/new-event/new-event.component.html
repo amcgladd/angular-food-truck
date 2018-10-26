@@ -1,20 +1,26 @@
-<h1>Add New Event</h1>
-<div>
-  <label>Event Month / Day / Year:</label>
-  <p><input #newMonth type="number">/<input #newDay type="number">/<input #newYear type="number"></p>
-</div>
-<div>
-  <label>Event Address:</label>
-  <p><input #newAddress type="text"></p> <!--p tag here for line height-->
-</div>
-<div>
-  <label>Operation Hours:</label>
-  <p>from <input #newOpenHour type="number"> to <input #newCloseHour type="number"></p>
-</div>
-<div>
-  <label>Event Coordinates</label>
-  <p>Lat: <input #newLatitude type="number"> Long: <input #newLongitude type="number"></p>
-</div>
-<div>
-  <button (click)="submitNewEvent(newMonth.value, newDay.value, newYear.value, newAddress.value, newOpenHour.value, newCloseHour.value, newLatitude.value, newLongitude.value); newMonth.value=''; newDay.value=''; newYear/value=''; newAddress.value=''; newOpenHour.value=''; newCloseHour.value=''; newLatitude.value=''; newLongitude.value='';">Add Event</button>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Event</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Event Month / Day / Year:</label>
+      <p><input #newMonth type="number">/<input #newDay type="number">/<input #newYear type="number"></p>
+    </div>
+    <div>
+      <label>Event Address:</label>
+      <p><input #newAddress type="text"></p> <!--p tag here for line height-->
+    </div>
+    <div>
+      <label>Operation Hours:</label>
+      <p>from <input #newOpenHour type="number"> to <input #newCloseHour type="number"></p>
+    </div>
+    <div>
+      <label>Event Coordinates</label>
+      <p>Lat: <input #newLatitude type="number"> Long: <input #newLongitude type="number"></p>
+    </div>
+    <div>
+      <button (click)="submitNewEvent(newMonth.value, newDay.value, newYear.value, newAddress.value, newOpenHour.value, newCloseHour.value, newLatitude.value, newLongitude.value); newMonth.value=''; newDay.value=''; newYear/value=''; newAddress.value=''; newOpenHour.value=''; newCloseHour.value=''; newLatitude.value=''; newLongitude.value='';">Add Event</button>
+    </div>
+  </div>
 </div>
