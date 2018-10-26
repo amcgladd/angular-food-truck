@@ -8,6 +8,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { NewEventComponent } from './new-event/new-event.component';
 import { EditEventComponent } from './edit-event/edit-event.component';
 import { EventMapComponent } from './event-map/event-map.component';
+import { CateringComponent } from './catering/catering.component';
 
 
 
@@ -18,6 +19,7 @@ import { EventMapComponent } from './event-map/event-map.component';
     NewEventComponent,
     EditEventComponent,
     EventMapComponent,
+    CateringComponent,
   ],
   imports: [
     BrowserModule,
