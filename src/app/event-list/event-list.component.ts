@@ -27,12 +27,11 @@ export class EventListComponent implements OnInit {
 
   editEvent(clickedEvent) {
     this.selectedEvent = clickedEvent
-    console.log(this.selectedEvent);
   }
 
-  editingDone() {
-    this.selectedEvent = null;
-  }
+  // editingDone() {
+  //   this.selectedEvent = null;
+  // }
 
   addEvent(newEvent: Event) {
     this.events.push(newEvent);
