@@ -1,0 +1,26 @@
+{ "events": [{
+  "day": 26,
+  "month": 11,
+  "year": 2018,
+  "address": "Pioneer Square 701 SW 6th Ave, Portland, OR 97205",
+  "openHour": 9,
+  "closeHour": 5,
+  "latitude": 45.518997,
+  "longitude": -122.679262,
+  "id": 1
+  },{
+    "day": 27,
+    "month": 11,
+    "year": 2018,
+    "address": "950 SW Washington St, Portland, OR 97204",
+    "openHour": 10,
+    "closeHour": 6,
+    "latitude": 45.520846,
+    "longitude": -122.681493,
+    "id": 2
+    }]
+  }
+
+
+
+  
