@@ -2,6 +2,7 @@ import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 import { Event } from '../models/event.model';
 import { Router } from '@angular/router';
 import { EventService } from '../event.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class EventListComponent implements OnInit {
   @Output() clickEventToBeEdited = new EventEmitter();
   @Output() clickDeleteEvent = new EventEmitter();
 
-  events: Event[];
+  events: FirebaseListObservable<any[]>;
   selectedEvent = null;
 
   constructor(private router: Router, private eventService: EventService){}
@@ -37,10 +38,10 @@ export class EventListComponent implements OnInit {
     this.events.push(newEvent);
   }
 
-  deleteEvent(deadEvent: Event) {
-    const indexOfDeadEvent = this.events.indexOf(deadEvent);
-    this.events.splice(indexOfDeadEvent, 1);
-  }
+  // deleteEvent(deadEvent: Event) {
+  //   const indexOfDeadEvent = this.events.indexOf(deadEvent);
+  //   this.events.splice(indexOfDeadEvent, 1);
+  // }
 
   editButtonClicked(eventToEdit: Event) {
     this.clickEventToBeEdited.emit(eventToEdit);

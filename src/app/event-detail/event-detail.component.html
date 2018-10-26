@@ -1,8 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-body">
-<h3>{{eventToDisplay.month}}/{{eventToDisplay.day}}/{{eventToDisplay.year}}</h3>
-<h3>{{eventToDisplay.address}}</h3>
-<h3>Hours:{{eventToDisplay.openHour}}-{{eventToDisplay.closeHour}}</h3>
+<h3>{{eventToDisplay.month}}/{{eventToDisplay.day}}/{{(eventToDisplay | async)?.year}}</h3>
+<h3>{{(eventToDisplay | async)?.address}}</h3>
+<h3>Hours:{{(eventToDisplay | async)?.openHour}}-{{(eventToDisplay | async)?.closeHour}}</h3>
   <app-event-map></app-event-map>
 </div>
 </div>

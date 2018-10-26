@@ -5,11 +5,14 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class EventService {
+  events: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+  this.events = database.list('events');
+}
 
   getEvents() {
-  return EVENTS;
+  return this.events;
 }
 
 getEventById(eventId: number){

@@ -1,6 +1,6 @@
 <h1>Event-List</h1>
 
-<div *ngFor="let currentEvent of events" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
+<div *ngFor="let currentEvent of events | async" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
   <div class="panel-body">
     <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
     <h3>{{currentEvent.address}}</h3>
