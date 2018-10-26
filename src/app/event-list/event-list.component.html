@@ -1,6 +1,6 @@
 <h1>Event-List</h1>
 
-<div *ngFor="let currentEvent of childEventList" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
+<div *ngFor="let currentEvent of events" (click)="goToDetailPage(currentEvent)" class="panel panel-default">
   <div class="panel-body">
     <h1>{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1>
     <h3>{{currentEvent.address}}</h3>
@@ -10,3 +10,6 @@
     <button (click)="deleteButtonClicked(currentEvent)">Delete</button>
   </div>
 </div>
+
+<app-new-event (sendEvent)="addEvent($event)"></app-new-event>
+<app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event>

@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { EventService } from '../event.service';
 
 
-
 @Component({
   selector: 'app-event-list',
   templateUrl: './event-list.component.html',
@@ -12,7 +11,6 @@ import { EventService } from '../event.service';
   providers: [EventService]
 })
 export class EventListComponent implements OnInit {
-  @Input() childEventList: Event[];
   @Output() clickEventToBeEdited = new EventEmitter();
   @Output() clickDeleteEvent = new EventEmitter();
 

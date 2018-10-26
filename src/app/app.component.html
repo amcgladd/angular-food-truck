@@ -10,9 +10,6 @@
   </div>
 </nav>
 
-<!-- <app-event-list [childEventList]="masterEventList" (clickEventToBeEdited)="editEvent($event)" (clickDeleteEvent)="deleteEvent($event)"> -->
+<h1>Food Truck Tracker</h1>
 
-<app-event-list (clickEventToBeEdited)="editEvent($event)" (clickDeleteEvent)="deleteEvent($event)"></app-event-list>
-<app-new-event (sendEvent)="addEvent($event)"></app-new-event>
-<app-edit-event [childSelectedEvent]="selectedEvent" (clickDone)="editingDone()" ></app-edit-event>
 <router-outlet></router-outlet>
