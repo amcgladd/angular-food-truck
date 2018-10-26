@@ -1,7 +1,7 @@
 
 <div class="container">
   <h1>Event-List</h1>
-  <div *ngFor="let currentEvent of events | async" class="panel panel-default">
+  <div *ngFor="let currentEvent of events | async" class="card">
     <div class="panel-body">
       <a><h1 (click)="goToDetailPage(currentEvent)">{{currentEvent.month}}/{{currentEvent.day}}/{{currentEvent.year}}</h1></a>
       <h3>{{currentEvent.address}}</h3>
@@ -16,6 +16,13 @@
 </div>
 
 
-
-
-      
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
